@@ -1,0 +1,19 @@
+{
+    "pid": 12579, 
+    "options": {
+        "loglevel": "info", 
+        "logformat": "standard", 
+        "reactor": null, 
+        "command": "start", 
+        "colour": "auto", 
+        "logdir": null, 
+        "logtofile": false, 
+        "cbdir": "/home/ourdata/findme/.crossbar", 
+        "config": "config.json", 
+        "cdc": false
+    }, 
+    "argv": [
+        "/home/ourdata/anaconda3/envs/findme/bin/crossbar", 
+        "start"
+    ]
+}
