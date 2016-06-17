@@ -9,7 +9,7 @@ Admin interface: [admin](http://mobb.space:8080/admin)  Just the non-public admi
 
 ### Assuming a fresh install of Ubuntu Xenial Xerus
 ```
-sudo apt install postgresql postgresql-contrib postgis
+sudo apt install postgresql postgresql-contrib postgresql-server-dev-9.5 postgis
 sudo -u postgres createuser mobb
 sudo -u postgres createdb --encoding=UTF8 --owner=mobb findme
 psql --username=mobb --dbname=findme -c "CREATE EXTENSION postgis;"
@@ -36,6 +36,7 @@ crossbar version
 cd ~
 git clone https://github.com/andysodt/findme.git
 crossbar init
+pip install django psycopg2cffi
 ```
 
 
