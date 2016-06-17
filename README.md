@@ -6,3 +6,6 @@ Server is running: [monitor](http://mine.haus:8080) This is an example that moni
 Admin interface: [admin](http://mine.haus:8080/admin)  Just the non-public admin pages.
 
 ## Installation
+
+https://docs.djangoproject.com/en/1.9/ref/contrib/gis/tutorial/
+
