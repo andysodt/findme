@@ -31,6 +31,13 @@ pip install crossbar
 crossbar version
 ```
 
+### install findme
+```
+cd ~
+git clone https://github.com/andysodt/findme.git
+crossbar init
+```
+
 
 ## Helpful Links
 
