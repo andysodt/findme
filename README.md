@@ -59,7 +59,7 @@ crossbar start --cbdir /home/mobb/findme/.crossbar
 
 ### Start up monitor (may need to edit client.py to change to your machine's IP address)
 ```
-crossbar start --cbdir /home/mobb/findme/.crossbar
+python client.py
 ```
 
 
