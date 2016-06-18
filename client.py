@@ -78,7 +78,7 @@ app = Application('monitoring')
 # from the outside. You should change this value
 # to the IP of the machine you put Crossbar.io
 # and Django.
-SERVER = '74.50.61.121'
+SERVER = '74.50.51.151'
 
 # First, we use a trick to know the public IP for this
 # machine.

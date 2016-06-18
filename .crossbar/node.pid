@@ -1,19 +1,21 @@
 {
-    "pid": 12579, 
+    "pid": 7385, 
+    "argv": [
+        "/home/mobb/pypy-venv/bin/crossbar", 
+        "start", 
+        "--cbdir", 
+        "/home/mobb/findme/.crossbar"
+    ], 
     "options": {
-        "loglevel": "info", 
-        "logformat": "standard", 
-        "reactor": null, 
-        "command": "start", 
-        "colour": "auto", 
+        "cdc": false, 
+        "cbdir": "/home/mobb/findme/.crossbar", 
+        "config": "config.json", 
         "logdir": null, 
         "logtofile": false, 
-        "cbdir": "/home/ourdata/findme/.crossbar", 
-        "config": "config.json", 
-        "cdc": false
-    }, 
-    "argv": [
-        "/home/ourdata/anaconda3/envs/findme/bin/crossbar", 
-        "start"
-    ]
+        "loglevel": "info", 
+        "colour": "auto", 
+        "logformat": "standard", 
+        "command": "start", 
+        "reactor": null
+    }
 }
