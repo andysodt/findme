@@ -86,8 +86,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'NAME': 'findme',
-        'USER': 'ourdata',
-        'PASSWORD': 'moribunde',
+        'USER': 'mobb',
+        'PASSWORD': 'mobbspace!',
         'HOST': '127.0.0.1',
         'PORT': '5432',
     }
