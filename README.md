@@ -37,6 +37,29 @@ cd ~
 git clone https://github.com/andysodt/findme.git
 crossbar init
 pip install django psycopg2cffi
+python manage.py migrate
+```
+### load world borders data
+```
+python manage.py shell
+>>> from world import load
+>>> load.run()
+>>> exit()
+```
+
+### create superuser
+```
+python manage.py createsuperuser
+```
+
+### Start up
+```
+crossbar start --cbdir /home/mobb/findme/.crossbar
+```
+
+### Start up monitor (may need to edit client.py to change to your machine's IP address)
+```
+crossbar start --cbdir /home/mobb/findme/.crossbar
 ```
 
 
