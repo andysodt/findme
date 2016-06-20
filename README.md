@@ -38,7 +38,7 @@ crossbar version
 cd ~
 git clone https://github.com/andysodt/findme.git
 crossbar init
-pip install django bootstrap-admin psycopg2cffi
+pip install django django-jet psycopg2cffi
 python manage.py migrate
 ```
 ### load world borders data
@@ -123,6 +123,11 @@ Now allow the Crossbar.io and PyPy executables to bind privileged ports:
 ```
 sudo setcap cap_net_bind_service=+ep `which crossbar`
 sudo setcap cap_net_bind_service=+ep `which pypy`
+```
+
+### Collect Static (Not sure if this is needed)
+```
+python manage.py collectstatic
 ```
 
 ## Helpful Links
