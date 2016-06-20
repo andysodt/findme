@@ -1,6 +1,8 @@
-# findme (name in progress)
+# mobb.space findme
 
-An mesh based ecosytem with software and hardware components.
+mobb.space is a mesh based ecosytem with software and hardware components.
+findme is an app to coordinate anonymous users around a map pin.
+
 Server is running: [monitor](http://mobb.space:8080) This is an example that monitors node resources via WAMP using crossbar and javascript.  This is basically the mechanism we will use to write the web based app and peer to peer communication.
 
 Admin interface: [admin](http://mobb.space:8080/admin)  Just the non-public admin pages.
