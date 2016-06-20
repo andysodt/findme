@@ -109,6 +109,18 @@ To get log output:
 journalctl -f -u crossbar
 ```
 
+### Run on port 80
+
+Install libcap2:
+```
+sudo apt-get install libcap2-bin
+```
+Now allow the Crossbar.io and PyPy executables to bind privileged ports:
+```
+sudo setcap cap_net_bind_service=+ep `which crossbar`
+sudo setcap cap_net_bind_service=+ep `which pypy`
+```
+
 ## Helpful Links
 
 [GeoDjango tutorial](https://docs.djangoproject.com/en/1.9/ref/contrib/gis/tutorial/)
