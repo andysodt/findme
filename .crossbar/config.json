@@ -34,7 +34,11 @@
                     "type": "web",
                     "endpoint": {
                         "type": "tcp",
-                        "port": 80
+                        "port": 8888,
+                        "tls": {
+                            "key": "/home/mobb/ssl.key",
+                            "certificate": "/home/mobb/ssl.cert"
+                        }
                     },
                     "paths": {
                         "/": {
