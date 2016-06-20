@@ -61,7 +61,54 @@ crossbar start --cbdir /home/mobb/findme/.crossbar
 ```
 python client.py
 ```
+### Automatic Startup and Restart
+```
+crossbar start --cbdir /home/mobb/findme/.crossbar
+```
+Create a systemd service file /etc/systemd/system/crossbar.service
 
+Put this in it:
+
+  [Unit]
+  Description=Crossbar.io
+  After=network.target
+
+  [Service]
+  Type=simple
+  User=ubuntu
+  Group=ubuntu
+  StandardInput=null
+  StandardOutput=journal
+  StandardError=journal
+  Environment="MYVAR1=foobar"
+  ExecStart=/opt/crossbar/bin/crossbar start --cbdir=/home/ubuntu/mynode1/.crossbar
+  Restart=on-abort
+
+  [Install]
+  WantedBy=multi-user.target
+
+Adjust the path to the Crossbar.io executable /opt/crossbar/bin/crossbar and your Crossbar.io node directory /home/ubuntu/mynode1/.crossbar in above.
+
+Then do:
+
+  sudo systemctl daemon-reload
+
+To make Crossbar.io start automatically at boot time:
+
+  sudo systemctl enable crossbar.service
+
+To start, stop, restart and get status for Crossbar.io:
+
+  sudo systemctl start crossbar
+  sudo systemctl stop crossbar
+  sudo systemctl restart crossbar
+  sudo systemctl status crossbar
+
+To get log output:
+
+  journalctl -f -u crossbar
+
+```
 
 ## Helpful Links
 
