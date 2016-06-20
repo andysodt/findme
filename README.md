@@ -38,7 +38,7 @@ crossbar version
 cd ~
 git clone https://github.com/andysodt/findme.git
 crossbar init
-pip install django psycopg2cffi
+pip install django bootstrap-admin psycopg2cffi
 python manage.py migrate
 ```
 ### load world borders data
