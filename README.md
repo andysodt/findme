@@ -63,8 +63,6 @@ python client.py
 ```
 ### Automatic Startup and Restart
 ```
-crossbar start --cbdir /home/mobb/findme/.crossbar
-```
 Create a systemd service file /etc/systemd/system/crossbar.service
 
 Put this in it:
