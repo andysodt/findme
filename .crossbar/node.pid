@@ -1,10 +1,8 @@
 {
-    "pid": 7385, 
+    "pid": 10748, 
     "argv": [
         "/home/mobb/pypy-venv/bin/crossbar", 
-        "start", 
-        "--cbdir", 
-        "/home/mobb/findme/.crossbar"
+        "start"
     ], 
     "options": {
         "cdc": false, 
