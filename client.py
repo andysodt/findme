@@ -108,7 +108,7 @@ def called_on_joined():
 
     # Then we make a POST request to the server to notify it we are active
     # and to retrieve the configuration values for our client.
-    response = requests.post('http://' + SERVER + ':8080/clients/', data={'ip': app._params['ip']})
+    response = requests.post('https://' + SERVER + ':8888/clients/', data={'ip': app._params['ip']})
     if response.status_code == 200:
         app._params.update(response.json())
     else:
@@ -150,4 +150,4 @@ def update_configuration(args):
 # We start our client.
 if __name__ == '__main__':
     print("starting client...")
-    app.run(url=u'ws://{}:8080/ws'.format(SERVER))
+    app.run(url=u'ws://{}:8888/ws'.format(SERVER))

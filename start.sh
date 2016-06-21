@@ -8,3 +8,4 @@ cd $VENVDIR
 . bin/activate
 cd $SRCDIR
 crossbar start
+python client.py
