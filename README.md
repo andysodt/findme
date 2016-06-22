@@ -133,5 +133,7 @@ python manage.py collectstatic
 ## Helpful Links
 
 [GeoDjango tutorial](https://docs.djangoproject.com/en/1.9/ref/contrib/gis/tutorial/)
+[leaflet D3 tutorial](https://bost.ocks.org/mike/leaflet/)
+
 
 
