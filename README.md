@@ -111,9 +111,9 @@ To get log output:
 journalctl -f -u crossbar
 ```
 
-### Run on port 80
+### Optional: Run on port 80
 
-Currently, .crossbar/config.json has findme running on port 80.  By default apache runs on port 80, so you will need to move that (/etc/apache2/ports.conf) or not run apache.
+Currently, .crossbar/config.json has findme running on port 8888.  This seems to be working fine since we have the website under apache on 80.  By default apache runs on port 80, so you will need to move that (/etc/apache2/ports.conf) or not run apache if you want to switch to 80.
 
 Install libcap2:
 ```
