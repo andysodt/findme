@@ -12,6 +12,10 @@ Admin interface: [admin](http://mobb.space:8080/admin)  Just the non-public admi
 ### Assuming a fresh install of Ubuntu Xenial Xerus
 ```
 sudo apt install postgresql postgresql-contrib postgresql-server-dev-9.5 postgis
+```
+Now configure postgres:
+[Postgres authentication set up](https://help.ubuntu.com/lts/serverguide/postgresql.html)
+```
 sudo -u postgres createuser mobb
 sudo -u postgres createdb --encoding=UTF8 --owner=mobb findme
 psql --username=mobb --dbname=findme -c "CREATE EXTENSION postgis;"
