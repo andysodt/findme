@@ -14,7 +14,7 @@ Admin interface: [admin](http://mobb.space:8080/admin)  Just the non-public admi
 adduser mobb
 gpasswd -a demo sudo
 ```
-### Log out and log in as mobb, then isntall postgres and postgis
+### Log out and log in as mobb, then install postgres and postgis
 ```
 sudo apt install postgresql postgresql-contrib postgresql-server-dev-9.5 postgis
 ```
