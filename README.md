@@ -124,6 +124,9 @@ To get log output:
 ```
 journalctl -f -u crossbar
 ```
+### Optional: Nginx + Apache setup
+
+[setup](https://www.digitalocean.com/community/tutorials/how-to-configure-nginx-as-a-web-server-and-reverse-proxy-for-apache-on-one-ubuntu-16-04-server)
 
 ### Optional: Run on port 80
 
