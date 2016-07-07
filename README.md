@@ -50,6 +50,7 @@ crossbar version
 ```
 cd ~
 git clone https://github.com/andysodt/findme.git
+cd findme
 crossbar init
 pip install django django-jet google-api-python-client feedparser psycopg2cffi
 python manage.py migrate
