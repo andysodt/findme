@@ -15,9 +15,11 @@ sudo apt install postgresql postgresql-contrib postgresql-server-dev-9.5 postgis
 ```
 Now configure postgres:
 [Postgres authentication set up](https://help.ubuntu.com/lts/serverguide/postgresql.html)
+Give user postgres a good password
 ```
 sudo -u postgres createuser mobb
 sudo -u postgres createdb --encoding=UTF8 --owner=mobb findme
+psql --username=postgres -c "ALTER USER mobb WITH superuser;"
 psql --username=mobb --dbname=findme -c "CREATE EXTENSION postgis;"
 psql --username=mobb --dbname=findme -c "CREATE EXTENSION postgis_topology;"
 ```
