@@ -128,6 +128,8 @@ journalctl -f -u crossbar
 
 [setup](https://www.digitalocean.com/community/tutorials/how-to-configure-nginx-as-a-web-server-and-reverse-proxy-for-apache-on-one-ubuntu-16-04-server)
 
+[ssl](https://www.digitalocean.com/community/tutorials/how-to-create-an-ssl-certificate-on-nginx-for-ubuntu-14-04)
+
 ### Optional: Run on port 80
 
 Currently, .crossbar/config.json has findme running on port 8888.  This seems to be working fine since we have the website under apache on 80.  By default apache runs on port 80, so you will need to move that (/etc/apache2/ports.conf) or not run apache if you want to switch to 80.
